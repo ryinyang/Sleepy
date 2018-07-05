@@ -101,7 +101,10 @@ def main():
     while True:
         root = Tk()
         app = Sleep()
-        r = root.mainloop()
+        root.mainloop()
+        root.destroy()
+
+        # Keep nudging
         if running:
             time.sleep(10*60)
         else:
